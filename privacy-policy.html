@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VPN4MM — Official Privacy Policy &amp; VpnService Safety Disclosure</title>
+  <meta name="description" content="Official Privacy Policy, Zero-Log Guarantee, and VpnService Data Safety Disclosure for VPN4MM Android Application.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Padauk:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F8FAFC;
+      --card-bg: #FFFFFF;
+      --border: #E2E8F0;
+      --border-blue: #DBEAFE;
+      --text-primary: #1E293B;
+      --text-secondary: #64748B;
+      --text-muted: #94A3B8;
+      --primary: #2563EB;
+      --primary-dark: #1D4ED8;
+      --primary-light: #3B82F6;
+      --blue-tint: #EFF6FF;
+      --emerald: #10B981;
+      --emerald-bg: #ECFDF5;
+      --emerald-border: #A7F3D0;
+      --amber: #F59E0B;
+      --amber-bg: #FFFBEB;
+      --amber-border: #FDE68A;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 20px -2px rgba(15, 23, 42, 0.06);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.7;
+      padding: 32px 16px 60px 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+    .my-lang {
+      font-family: 'Padauk', 'Inter', -apple-system, sans-serif;
+      line-height: 1.85;
+    }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+    /* Language Switcher Bar */
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      padding: 12px 16px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      box-shadow: var(--shadow-sm);
+    }
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--primary);
+      letter-spacing: -0.5px;
+    }
+    .brand-icon {
+      width: 28px;
+      height: 28px;
+      background: var(--primary);
+      color: #FFFFFF;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 800;
+    }
+    .lang-switcher {
+      display: inline-flex;
+      background: var(--bg);
+      padding: 3px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+    .lang-btn {
+      border: none;
+      background: transparent;
+      padding: 6px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      color: var(--text-secondary);
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .lang-btn.active {
+      background: #FFFFFF;
+      color: var(--primary);
+      box-shadow: var(--shadow-sm);
+    }
+    .lang-btn:hover:not(.active) {
+      color: var(--text-primary);
+    }
+    /* Header Card */
+    header {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 32px 24px;
+      text-align: center;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-md);
+    }
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 14px;
+      border-radius: 9999px;
+      background: var(--blue-tint);
+      color: var(--primary);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      margin-bottom: 14px;
+      border: 1px solid var(--border-blue);
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+      color: var(--text-primary);
+    }
+    .meta-date {
+      color: var(--text-secondary);
+      font-size: 13px;
+      font-weight: 500;
+    }
+    /* Content Cards */
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 26px 24px;
+      margin-bottom: 20px;
+      box-shadow: var(--shadow-sm);
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin: 16px 0 8px 0;
+    }
+    p {
+      color: var(--text-secondary);
+      font-size: 14.5px;
+      margin-bottom: 12px;
+    }
+    p:last-child { margin-bottom: 0; }
+    ul {
+      margin: 8px 0 14px 20px;
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+    li { margin-bottom: 6px; }
+    strong { color: var(--text-primary); font-weight: 600; }
+    /* Highlights */
+    .box-success {
+      background: var(--emerald-bg);
+      border: 1px solid var(--emerald-border);
+      border-left: 4px solid var(--emerald);
+      padding: 14px 16px;
+      border-radius: 10px;
+      margin: 14px 0;
+    }
+    .box-success p { color: #065F46; }
+    .box-info {
+      background: var(--blue-tint);
+      border: 1px solid var(--border-blue);
+      border-left: 4px solid var(--primary);
+      padding: 14px 16px;
+      border-radius: 10px;
+      margin: 14px 0;
+    }
+    .box-info p { color: #1E40AF; }
+    .box-warning {
+      background: var(--amber-bg);
+      border: 1px solid var(--amber-border);
+      border-left: 4px solid var(--amber);
+      padding: 14px 16px;
+      border-radius: 10px;
+      margin: 14px 0;
+    }
+    .box-warning p { color: #92400E; }
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 36px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+    a { color: var(--primary); text-decoration: none; font-weight: 500; }
+    a:hover { text-decoration: underline; }
+    .lang-block { display: none; }
+    .lang-block.active { display: block; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Top Bar with Language Selector -->
+    <div class="top-bar">
+      <div class="brand-logo">
+        <div class="brand-icon">V</div>
+        <span>VPN4MM</span>
+      </div>
+      <div class="lang-switcher">
+        <button id="btn-en" class="lang-btn active" onclick="switchLanguage('en')">
+          <span>🇬🇧</span> English
+        </button>
+        <button id="btn-my" class="lang-btn" onclick="switchLanguage('my')">
+          <span>🇲🇲</span> မြန်မာစာ
+        </button>
+      </div>
+    </div>
+
+    <!-- ================================================================= -->
+    <!-- ENGLISH VERSION (2026 Google Play & AdMob Policy Standard)        -->
+    <!-- ================================================================= -->
+    <div id="content-en" class="lang-block active">
+      <header>
+        <div class="badge-pill">✓ Google Play 2026 &amp; AdMob Policy Compliant</div>
+        <h1>Privacy Policy &amp; VpnService Safety Disclosure</h1>
+        <div class="meta-date">Last Updated &amp; Effective: October 30, 2026 · Version 1.2</div>
+      </header>
+
+      <div class="card">
+        <h2>1. Overview &amp; Commitment to Privacy</h2>
+        <p>VPN4MM ("we", "our", or "the App") is developed as a high-performance, censorship-resistant personal network utility designed for users seeking secure, private, and unrestricted internet access. We believe privacy is a fundamental human right. Our architecture is engineered around the core principle of <strong>Zero Physical Data Retention (Zero-Log Architecture)</strong>.</p>
+      </div>
+
+      <div class="card">
+        <h2>2. Prominent Android VpnService API Disclosure</h2>
+        <p>In accordance with <strong>Google Play Developer Program Policies regarding VpnService</strong>, we provide explicit disclosures before any encrypted tunnel is established:</p>
+        <div class="box-info">
+          <p><strong>Core Purpose:</strong> VPN4MM requires Android's native <code>VpnService</code> API to establish a device-level secure encrypted transport tunnel directly to our private Singapore edge proxy nodes.</p>
+        </div>
+        <h3>Technical Functions Operated via VpnService:</h3>
+        <ul>
+          <li><strong>Encrypted Transport:</strong> Secures outbound TCP/UDP traffic from user applications over modern TLS 1.3 / AEAD cryptographic ciphers across untrusted cellular networks (ATOM, MPT, Ooredoo, Mytel) and public Wi-Fi hotspots.</li>
+          <li><strong>DNS Anti-Poisoning:</strong> Resolves domain queries through private Singapore recursive DNS resolvers to shield users from local ISP DNS hijacking, redirection, and surveillance.</li>
+          <li><strong>Zero IVT AdMob Direct Exemption:</strong> To comply with Google AdMob policies against invalid traffic, ad-serving domains and Google Play API endpoints bypass the VPN tunnel and route directly to prevent policy flags.</li>
+        </ul>
+        <div class="box-success">
+          <p><strong>Safety Guarantee:</strong> The <code>VpnService</code> tunnel operates strictly as a secure pass-through. It does NOT inspect, decrypt, alter, log, or sell any user browsing payloads, visited URLs, financial credentials, or private communications.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>3. Strict Zero-Log Policy (What We Do NOT Collect)</h2>
+        <p>To eliminate forensic risk and prevent unauthorized user identification, our Singapore transit daemons (Sing-Box) operate strictly in RAM with disk logging disabled:</p>
+        <ul>
+          <li><strong>NO Browsing History:</strong> We do not log visited websites, apps, or destination IP addresses.</li>
+          <li><strong>NO Packet Inspection:</strong> We do not inspect payloads, HTTP headers, or network packets.</li>
+          <li><strong>NO DNS Query Logs:</strong> We do not store records of domain lookups performed by your device.</li>
+          <li><strong>NO Physical IP Association:</strong> Your cellular IP address is never linked to session traffic.</li>
+          <li><strong>NO Connection Timestamps:</strong> We do not keep historical logs of connection timestamps.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>4. Account &amp; Local Cryptographic Vault</h2>
+        <p><strong>Guest Mode:</strong> You can use VPN4MM without providing an email, phone number, or password. Free data quota is managed locally using an offline <strong>HMAC-SHA256 Cryptographic Vault</strong> stored securely on your device.</p>
+        <p><strong>Telegram Linkage:</strong> If you voluntarily authenticate via our official Telegram bot (<a href="https://t.me/vpn4mm_bot">@vpn4mm_bot</a>), we only receive a pseudonymous numerical Telegram ID and public username for quota synchronization. We never request or store your Telegram password or personal messages.</p>
+      </div>
+
+      <div class="card">
+        <h2>5. Advertising &amp; Monetization (Google AdMob &amp; Unity Ads)</h2>
+        <p>To provide fast, reliable Singapore nodes free of charge, the App integrates Google Mobile Ads (AdMob) and Unity Ads SDKs:</p>
+        <ul>
+          <li>Ad networks may collect non-sensitive diagnostic telemetry, coarse location, and advertising IDs (AAID) in strict compliance with Google Play Advertising ID policies.</li>
+          <li>Ads are delivered under strict 2026 anti-abuse guidelines: voluntary rewarded ads only, no unexpected interstitials during VPN connection initiation, and a 15-minute frequency cap on natural-transition disconnect ads.</li>
+          <li>Users can reset or opt out of personalized advertising IDs via Android Settings &gt; Google &gt; Ads.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>6. 1-Tap Data Deletion &amp; User Rights</h2>
+        <p>You have complete control over your data at all times:</p>
+        <ul>
+          <li><strong>1-Tap Instant Wipe:</strong> In the App Settings screen, tap <em>"Delete Account &amp; Data" (အကောင့်နှင့် ဒေတာအားလုံး ဖျက်မည်)</em> to immediately purge all local cryptographic tokens, Telegram sync data, and cached preferences.</li>
+          <li><strong>Email Purge Request:</strong> You may email our Data Protection Officer at <a href="mailto:support@vpn4mm.mm-pub.de5.net">support@vpn4mm.mm-pub.de5.net</a> to purge your token ledger immediately.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>7. Open-Source Transparency &amp; Maintainer Disclaimer</h2>
+        <div class="box-success">
+          <p><strong>Open-Source Transparency Commitment:</strong> VPN4MM is built with 100% public openness and zero hidden backdoors. The project is authored and actively maintained by <strong>Thaw Zin (@Chris / @pretamane)</strong>. Any user, researcher, or auditor is invited to inspect and verify our security protocols, client configurations, and privacy claims.</p>
+        </div>
+        <h3>Official Maintainer &amp; Reviewer Correspondence:</h3>
+        <ul>
+          <li><strong>Lead Developer &amp; Maintainer:</strong> Thaw Zin (@Chris / @pretamane)</li>
+          <li><strong>Direct Maintainer Email:</strong> <a href="mailto:thawzin252467@gmail.com">thawzin252467@gmail.com</a></li>
+          <li><strong>Operations Support:</strong> <a href="mailto:support@vpn4mm.mm-pub.de5.net">support@vpn4mm.mm-pub.de5.net</a></li>
+          <li><strong>Official GitHub Releases:</strong> <a href="https://github.com/pretamane/vpn4mm-releases">github.com/pretamane/vpn4mm-releases</a></li>
+          <li><strong>Official Policy URL:</strong> <a href="https://pretamane.github.io/vpn4mm-releases/privacy-policy.html">https://pretamane.github.io/vpn4mm-releases/privacy-policy.html</a></li>
+          <li><strong>Official Telegram Channel / Bot:</strong> <a href="https://t.me/vpn4mm_bot">@vpn4mm_bot</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ================================================================= -->
+    <!-- BURMESE VERSION (မြန်မာဘာသာ)                                      -->
+    <!-- ================================================================= -->
+    <div id="content-my" class="lang-block my-lang">
+      <header>
+        <div class="badge-pill">✓ Google Play &amp; AdMob မူဝါဒများနှင့် ကိုက်ညီသည်</div>
+        <h1>ကိုယ်ရေးအချက်အလက် လုံခြုံမှု မူဝါဒနှင့် VpnService ကြေညာချက်</h1>
+        <div class="meta-date">နောက်ဆုံးပြင်ဆင်သည့်ရက်စွဲ - အောက်တိုဘာလ ၃၀၊ ၂၀၂၆ · ဗားရှင်း ၁.၂</div>
+      </header>
+
+      <div class="card">
+        <h2>၁။ မိတ်ဆက်နှင့် လုံခြုံရေးဆိုင်ရာ မူဝါဒအနှစ်ချုပ်</h2>
+        <p>VPN4MM ("ကျွန်ုပ်တို့" သို့မဟုတ် "အက်ပ်") သည် မြန်မာနိုင်ငံရှိ အသုံးပြုသူများ အင်တာနက်ကို လွတ်လပ်၊ လုံခြုံ၊ လျင်မြန်စွာ အသုံးပြုနိုင်ရန် ရည်ရွယ်ဖန်တီးထားသော အဆင့်မြင့် ကွန်ရက်အထောက်အကူပြု ဆော့ဖ်ဝဲဖြစ်ပါသည်။ ကျွန်ုပ်တို့သည် အသုံးပြုသူများ၏ ကိုယ်ရေးကိုယ်တာလုံခြုံမှုကို အဓိကတန်ဖိုးထားပြီး <strong>အသုံးပြုမှုမှတ်တမ်း လုံးဝမသိမ်းဆည်းသောစနစ် (Strict Zero-Log Policy)</strong> ဖြင့် တည်ဆောက်ထားပါသည်။</p>
+      </div>
+
+      <div class="card">
+        <h2>၂။ Android VpnService အသုံးပြုမှုဆိုင်ရာ ပွင့်လင်းမြင်သာစွာ ကြေညာချက်</h2>
+        <p>Google Play စတိုး၏ <strong>VpnService ဆိုင်ရာ မူဝါဒစည်းမျဉ်းများ</strong> နှင့်အညီ ချိတ်ဆက်မှုမပြုမီ အောက်ပါအချက်များကို အသိပေးကြေညာအပ်ပါသည် -</p>
+        <div class="box-info">
+          <p><strong>အဓိကရည်ရွယ်ချက် -</strong> VPN4MM သည် သင့်ဖုန်းမှ အင်တာနက်ထွက်ပေါက်ဒေတာများကို ကျွန်ုပ်တို့၏ သီးသန့်စင်ကာပူ ဆာဗာများသို့ လုံခြုံစိတ်ချရသော လျှို့ဝှက်ကုဒ်စနစ် (Encrypted Tunnel) ဖြင့် ပို့ဆောင်ရန် Android ၏ တရားဝင် <code>VpnService</code> API ကို မဖြစ်မနေ အသုံးပြုရပါသည်။</p>
+        </div>
+        <h3>VpnService မှ လုပ်ဆောင်ပေးသော နည်းပညာပိုင်းဆိုင်ရာ စနစ်များ -</h3>
+        <ul>
+          <li><strong>အင်တာနက်ဒေတာ လျှို့ဝှက်ကုဒ်ပြုလုပ်ခြင်း -</strong> ဖုန်းအော်ပရေတာများ (ATOM, MPT, Ooredoo, Mytel) နှင့် အများသုံး Wi-Fi များတွင် ကြားဖြတ်စောင့်ကြည့်ခြင်း မခံရစေရန် TLS 1.3 / AEAD ခေတ်မီကုဒ်များဖြင့် အပြည့်အဝ ကာကွယ်ပေးပါသည်။</li>
+          <li><strong>DNS လမ်းကြောင်းလွှဲခံရမှု ကာကွယ်ခြင်း -</strong> ပြည်တွင်း ISP များမှ ဝဘ်ဆိုဒ်များ ပိတ်ဆို့ခြင်းနှင့် လမ်းကြောင်းလွှဲခြင်းကို ကျော်လွှားနိုင်ရန် စင်ကာပူ သီးသန့် DNS ဖြင့် တိုက်ရိုက်ချိတ်ဆက်ပေးပါသည်။</li>
+          <li><strong>ကြော်ငြာဒေတာများကို တိုက်ရိုက်လမ်းကြောင်းပေးခြင်း -</strong> Google AdMob ကြော်ငြာစည်းမျဉ်းများနှင့်အညီ ကြော်ငြာများနှင့် Google Play ဒေတာများကို VPN အတွင်းသို့ မထည့်သွင်းဘဲ သီးသန့်တိုက်ရိုက်ပေးပို့ပါသည်။</li>
+        </ul>
+        <div class="box-success">
+          <p><strong>လုံခြုံစိတ်ချရမှု အာမခံချက် -</strong> <code>VpnService</code> သည် သင့်အင်တာနက်အသုံးပြုမှုမှတ်တမ်းများ၊ ဝင်ရောက်ကြည့်ရှုသော ဝဘ်ဆိုဒ်များ၊ စကားဝှက်များနှင့် ငွေကြေးဆိုင်ရာ အချက်အလက်များကို မည်သည့်အခါမျှ စောင့်ကြည့်ခြင်း၊ ကြားဖြတ်ဖတ်ရှုခြင်း၊ သိမ်းဆည်းခြင်း သို့မဟုတ် အခြားသူထံ ရောင်းချခြင်း လုံးဝ (လုံးဝ) မပြုလုပ်ပါ။</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>၃။ သုံးစွဲသူမှတ်တမ်း လုံးဝမသိမ်းဆည်းသော စနစ် (Strict Zero-Log Policy)</h2>
+        <p>အသုံးပြုသူများ၏ အချက်အလက်လုံခြုံရေးအတွက် ကျွန်ုပ်တို့၏ စင်ကာပူ ဆာဗာများတွင် အောက်ပါမှတ်တမ်းများကို လုံးဝသိမ်းဆည်းထားခြင်း မရှိပါ -</p>
+        <ul>
+          <li><strong>ကြည့်ရှုသည့် ဝဘ်ဆိုဒ်မှတ်တမ်း (Browsing History) -</strong> မည်သည့်ဆိုက်၊ မည်သည့်အက်ပ်ကို သုံးသည်ကို မသိမ်းဆည်းပါ။</li>
+          <li><strong>အင်တာနက် အသွားအလာဒေတာများ (Traffic Packets) -</strong> ပေးပို့သော မက်ဆေ့ခ်ျနှင့် အချက်အလက်များကို မဖတ်ရှုပါ။</li>
+          <li><strong>DNS မှတ်တမ်းများ (DNS Query Logs) -</strong> မည်သည့် ဒိုမိန်းများကို ရှာဖွေသည်ကို မှတ်တမ်းမတင်ပါ။</li>
+          <li><strong>အသုံးပြုသူ၏ မူလ IP လိပ်စာ (Real IP Address) -</strong> ဖုန်းဆင်းမ်ကတ်၏ IP လိပ်စာနှင့် ဆက်စပ်မှတ်သားခြင်း မရှိပါ။</li>
+          <li><strong>အချိန်မှတ်တမ်းများ (Connection Timestamps) -</strong> မည်သည့်အချိန်တွင် စတင်ချိတ်ဆက်ခဲ့သည်ကို သိမ်းဆည်းမထားပါ။</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>၄။ အကောင့်နှင့် ဒေတာလုံခြုံရေး (Guest စနစ်နှင့် Telegram)</h2>
+        <p><strong>ဧည့်သည်အဆင့် (Guest Mode) -</strong> အီးမေးလ်၊ ဖုန်းနံပါတ် သို့မဟုတ် စကားဝှက် ပေးစရာမလိုဘဲ အက်ပ်ကို အခမဲ့ စတင်အသုံးပြုနိုင်ပါသည်။ အခမဲ့ဒေတာလက်ကျန်ကို သင့်ဖုန်းအတွင်းရှိ <strong>HMAC-SHA256 Cryptographic Vault</strong> ဖြင့် ဒေသတွင်း၌သာ လုံခြုံစွာ တွက်ချက်ထိန်းသိမ်းထားပါသည်။</p>
+        <p><strong>Telegram ဖြင့် အကောင့်ချိတ်ဆက်ခြင်း -</strong> ကျွန်ုပ်တို့၏ တရားဝင် တယ်လီဂရမ်ဘော့ (<a href="https://t.me/vpn4mm_bot">@vpn4mm_bot</a>) ဖြင့် မိမိဆန္ဒအလျောက် ချိတ်ဆက်ပါက သင့်အကောင့်၏ ဂဏန်း ID နံပါတ်နှင့် Username ကိုသာ ဒေတာလက်ကျန် တိုက်ဆိုင်စစ်ဆေးရန်အတွက်သာ အသုံးပြုပါသည်။ သင့်တယ်လီဂရမ် စကားဝှက် သို့မဟုတ် မက်ဆေ့ခ်ျများကို မည်သည့်အခါမျှ တောင်းယူခြင်းမရှိပါ။</p>
+      </div>
+
+      <div class="card">
+        <h2>၅။ ကြော်ငြာပြသခြင်းဆိုင်ရာ စည်းမျဉ်းများ (Google AdMob &amp; Unity Ads)</h2>
+        <p>စင်ကာပူ 10 Gbps မြန်နှုန်းမြင့် ဆာဗာများကို အခမဲ့ ဆက်လက်လည်ပတ်နိုင်ရန် Google AdMob နှင့် Unity Ads စနစ်များကို ထည့်သွင်းထားပါသည် -</p>
+        <ul>
+          <li>ကြော်ငြာကွန်ရက်များသည် Google Play မူဝါဒများနှင့်အညီ အကြမ်းဖျင်းတည်နေရာနှင့် ကြော်ငြာ ID (AAID) တို့ကို သင့်လျော်သော ကြော်ငြာများပြသရန် အသုံးပြုနိုင်ပါသည်။</li>
+          <li>ရုတ်တရက် အနှောင့်အယှက်ဖြစ်စေသော ကြော်ငြာများ မပါဝင်ဘဲ မိမိဆန္ဒအလျောက် ဒေတာရယူရန် ကြည့်ရှုသော Rewarded Ads များနှင့် VPN ချိတ်ဆက်မှု ဖြုတ်ပြီးချိန်၌သာ ပြသသော ၁၅ မိနစ် ကြားခံကန့်သတ်ထားသည့် Disconnect Ads များကိုသာ စနစ်တကျ ပြသပါသည်။</li>
+          <li>သင့်ဖုန်း၏ Settings &gt; Google &gt; Ads ထဲတွင် စိတ်ကြိုက်ကြော်ငြာများကို အချိန်မရွေး ပိတ်ပင်နိုင်ပါသည်။</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>၆။ အချက်အလက်များ ဖျက်သိမ်းခွင့်နှင့် သုံးစွဲသူ၏ အခွင့်အရေး (1-Tap Wipe)</h2>
+        <p>သင့်ဒေတာများကို မိမိစိတ်ကြိုက် အချိန်မရွေး စီမံခန့်ခွဲနိုင်ပါသည် -</p>
+        <ul>
+          <li><strong>၁ ချက်နှိပ်ရုံဖြင့် ဒေတာအားလုံး ရှင်းထုတ်ခြင်း -</strong> အက်ပ်၏ Settings မျက်နှာပြင်တွင် <em>"အကောင့်နှင့် ဒေတာအားလုံး ဖျက်မည်" (Delete Account &amp; Data)</em> ကို နှိပ်၍ ဖုန်းပေါ်ရှိ လျှို့ဝှက်ကုဒ်တိုကင်များ၊ တယ်လီဂရမ်ချိတ်ဆက်မှုများနှင့် မှတ်ဉာဏ်များကို ချက်ချင်း အပြီးတိုင် ဖျက်ပစ်နိုင်ပါသည်။</li>
+          <li><strong>တိုက်ရိုက် ဖျက်သိမ်းခိုင်းခြင်း -</strong> ကျွန်ုပ်တို့၏ အီးမေးလ်လိပ်စာ <a href="mailto:support@vpn4mm.mm-pub.de5.net">support@vpn4mm.mm-pub.de5.net</a> သို့ တိုက်ရိုက်ဆက်သွယ်၍ ဆာဗာပေါ်ရှိ သင့်တိုကင်အချက်အလက်များကို ချက်ချင်းဖျက်ခိုင်းနိုင်ပါသည်။</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>၇။ ပွင့်လင်းမြင်သာမှုဆိုင်ရာ ကြေညာချက်နှင့် တာဝန်ခံထိန်းသိမ်းသူ (Open-Source Maintainer)</h2>
+        <div class="box-success">
+          <p><strong>အများပြည်သူဆိုင်ရာ ပွင့်လင်းမြင်သာမှု ကတိကဝတ် -</strong> VPN4MM သည် လျှို့ဝှက်ချက်မရှိ၊ အများပြည်သူ အကျိုးစီးပွားအတွက် ရည်ရွယ်ဖန်တီးထားသော ပွင့်လင်းမြင်သာသည့် ကွန်ရက်အထောက်အကူပြု ဆော့ဖ်ဝဲဖြစ်ပါသည်။ ဤပရောဂျက်ကို <strong>Thaw Zin (@Chris / @pretamane)</strong> မှ အဓိကတာဝန်ယူ တည်ဆောက်ထိန်းသိမ်းထားပြီး လုံခြုံရေးဆိုင်ရာ မူဝါဒများနှင့် လုပ်ဆောင်ချက်များကို မည်သူမဆို လွတ်လပ်စွာ စစ်ဆေးနိုင်ပါသည်။</p>
+        </div>
+        <h3>တရားဝင် ဆက်သွယ်ရန် လိပ်စာနှင့် အထောက်အပံ့ -</h3>
+        <ul>
+          <li><strong>ပရောဂျက် ဦးဆောင်ထိန်းသိမ်းသူ -</strong> Thaw Zin (@Chris / @pretamane)</li>
+          <li><strong>တိုက်ရိုက် ဆက်သွယ်ရန် အီးမေးလ် -</strong> <a href="mailto:thawzin252467@gmail.com">thawzin252467@gmail.com</a></li>
+          <li><strong>အထောက်အပံ့ အီးမေးလ် -</strong> <a href="mailto:support@vpn4mm.mm-pub.de5.net">support@vpn4mm.mm-pub.de5.net</a></li>
+          <li><strong>တရားဝင် GitHub Releases -</strong> <a href="https://github.com/pretamane/vpn4mm-releases">github.com/pretamane/vpn4mm-releases</a></li>
+          <li><strong>တရားဝင် မူဝါဒလင့်ခ် -</strong> <a href="https://pretamane.github.io/vpn4mm-releases/privacy-policy.html">https://pretamane.github.io/vpn4mm-releases/privacy-policy.html</a></li>
+          <li><strong>တယ်လီဂရမ် အကူအညီ -</strong> <a href="https://t.me/vpn4mm_bot">@vpn4mm_bot</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2026 VPN4MM Network. All Rights Reserved. Protected under International Privacy &amp; Data Safety Standards.</p>
+    </footer>
+  </div>
+
+  <script>
+    function switchLanguage(lang) {
+      const enBlock = document.getElementById('content-en');
+      const myBlock = document.getElementById('content-my');
+      const btnEn = document.getElementById('btn-en');
+      const btnMy = document.getElementById('btn-my');
+
+      if (lang === 'my') {
+        enBlock.classList.remove('active');
+        myBlock.classList.add('active');
+        btnEn.classList.remove('active');
+        btnMy.classList.add('active');
+        document.documentElement.lang = 'my';
+        try { localStorage.setItem('vpn4mm_lang', 'my'); } catch (e) {}
+      } else {
+        myBlock.classList.remove('active');
+        enBlock.classList.add('active');
+        btnMy.classList.remove('active');
+        btnEn.classList.add('active');
+        document.documentElement.lang = 'en';
+        try { localStorage.setItem('vpn4mm_lang', 'en'); } catch (e) {}
+      }
+    }
+
+    // Auto-detect from URL or localStorage, default to English for Play Store crawler compliance
+    (function init() {
+      const params = new URLSearchParams(window.location.search);
+      const urlLang = params.get('lang');
+      let preferred = 'en';
+      if (urlLang === 'my' || urlLang === 'en') {
+        preferred = urlLang;
+      } else {
+        try {
+          const stored = localStorage.getItem('vpn4mm_lang');
+          if (stored) preferred = stored;
+        } catch (e) {}
+      }
+      switchLanguage(preferred);
+    })();
+  </script>
+</body>
+</html>
